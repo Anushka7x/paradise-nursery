@@ -1,0 +1,123 @@
+/* General styles for the shopping cart page */
+.shopping-cart {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  ul li span {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Message when the cart is empty */
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 20px;
+  }
+  
+  /* Cart actions section */
+  .cart-actions {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .continue-shopping,
+  .checkout {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .continue-shopping {
+    background-color: #007bff;
+  }
+  
+  .checkout {
+    background-color: #28a745;
+  }
+  
+  .continue-shopping:hover,
+  .checkout:hover {
+    opacity: 0.8;
+  }
+  
+  .continue-shopping:active,
+  .checkout:active {
+    opacity: 0.6;
+  }
+  
+  /* Optional: Styling for responsive design */
+  @media (max-width: 768px) {
+    .shopping-cart {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    ul li {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 12px;
+    }
+  
+    .cart-actions {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .continue-shopping,
+    .checkout {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+  
